@@ -19,9 +19,9 @@ fn main() {
 
     fn inspect(s: &String) {
         if s.ends_with('s') {
-            println!("{} is plural.",s)
+            println!("{} is plural.", s)
         } else {
-            println!("{} is singular.",s)
+            println!("{} is singular.", s)
         }
     }
 
@@ -45,16 +45,15 @@ fn main() {
     // Hint 2: `&&` is the boolean "AND" operator
     //
     if eat(arg) {
-       println!("Might be bananas");
+        println!("Might be bananas");
     } else {
-       println!("Not bananas");
+        println!("Not bananas");
     }
 
     fn eat(s: String) -> bool {
         if s.starts_with("b") && s.contains("a") {
             true
-        }
-        else {
+        } else {
             false
         }
     }
@@ -64,10 +63,10 @@ fn main() {
     // Challenge: Write a function "add" that takes *references* to two integer arguments,
     // dereferences them and adds them together, and returns the result.
     //
-    fn add(x: &i32, y:&i32) -> i32 {
+    fn add(x: &i32, y: &i32) -> i32 {
         *x;
         *y;
-        x+y
+        x + y
     }
     println!("1 + 2 = {}, even via references", add(&1, &2));
 }
